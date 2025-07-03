@@ -1,0 +1,31 @@
+04/18/2024 11:08:04 - INFO - __main__ - ***** Running training *****
+04/18/2024 11:08:04 - INFO - __main__ -   Num examples = 28000
+04/18/2024 11:08:04 - INFO - __main__ -   Num Epochs = 500
+04/18/2024 11:08:04 - INFO - __main__ -   Instantaneous batch size per device = 16
+04/18/2024 11:08:05 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+04/18/2024 11:08:05 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/18/2024 11:08:05 - INFO - __main__ -   Total optimization steps = 875000
+04/18/2024 11:08:05 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-128/Local-celeba-hq-1000-500-0-random/generated_images
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Traceback (most recent call last):
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 1535, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 765, in <module>
+    main(args)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 607, in main
+    noise_scheduler.set_variables(mask, timesteps)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/schedulers/scheduling_localddpm.py", line 290, in set_variables
+    self.a_t = self.a_t_prepare ** _extract_into_tensor(self.gamma.to(t.device), t, mask.shape)
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

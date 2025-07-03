@@ -1,0 +1,47 @@
+05/27/2024 09:39:23 - INFO - __main__ - ***** Running training *****
+05/27/2024 09:39:23 - INFO - __main__ -   Num examples = 28000
+05/27/2024 09:39:23 - INFO - __main__ -   Num Epochs = 10000
+05/27/2024 09:39:23 - INFO - __main__ -   Instantaneous batch size per device = 8
+05/27/2024 09:39:24 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+05/27/2024 09:39:24 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/27/2024 09:39:24 - INFO - __main__ -   Total optimization steps = 35000000
+05/27/2024 09:39:24 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Global/generated_images
+05/27/2024 09:39:25 - INFO - accelerate.accelerator - Loading states from ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10
+Resuming from checkpoint checkpoint-10
+05/27/2024 09:39:25 - INFO - accelerate.checkpointing - All model weights loaded successfully
+05/27/2024 09:39:27 - INFO - accelerate.checkpointing - All optimizer states loaded successfully
+05/27/2024 09:39:27 - INFO - accelerate.checkpointing - All scheduler states loaded successfully
+05/27/2024 09:39:27 - INFO - accelerate.checkpointing - All dataloader sampler states loaded successfully
+05/27/2024 09:39:27 - INFO - accelerate.checkpointing - All random states loaded successfully
+05/27/2024 09:39:27 - INFO - accelerate.accelerator - Loading in 0 custom states
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 9/3500 [00:00<04:04, 14.28it/s]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 10/3500 [00:16<04:04, 14.28it/s]05/27/2024 09:46:06 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:06 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:06 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:06 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:07 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:07 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:07 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+05/27/2024 09:46:07 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 11/3500 [24:52<253:03:50, 261.12s/it, loss=1.12, lr=2.2e-6, step=11]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 12/3500 [26:00<215:32:07, 222.46s/it, loss=1.11, lr=2.4e-6, step=12]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.

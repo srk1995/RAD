@@ -1,0 +1,13 @@
+04/30/2024 09:07:07 - INFO - __main__ - ***** Running training *****
+04/30/2024 09:07:07 - INFO - __main__ -   Num examples = 119915
+04/30/2024 09:07:07 - INFO - __main__ -   Num Epochs = 1000
+04/30/2024 09:07:08 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/30/2024 09:07:08 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/30/2024 09:07:08 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/30/2024 09:07:08 - INFO - __main__ -   Total optimization steps = 14990000
+04/30/2024 09:07:08 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/geometric_mix_stepsLocal-lsun_church_train-2000-1000-random-blur-b_bar/generated_images
+Checkpoint 'latest' does not exist. Starting a new training run.
+Epoch 0:   0%|          | 0/14990 [00:00<?, ?it/s]/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):

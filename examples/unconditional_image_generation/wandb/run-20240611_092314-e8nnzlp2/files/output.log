@@ -1,0 +1,28 @@
+06/11/2024 09:23:20 - INFO - __main__ - ***** Running training *****
+06/11/2024 09:23:20 - INFO - __main__ -   Num examples = 28000
+06/11/2024 09:23:20 - INFO - __main__ -   Num Epochs = 2500
+06/11/2024 09:23:20 - INFO - __main__ -   Instantaneous batch size per device = 16
+06/11/2024 09:23:20 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+06/11/2024 09:23:21 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/11/2024 09:23:21 - INFO - __main__ -   Total optimization steps = 4375000
+06/11/2024 09:23:21 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Global/generated_images
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

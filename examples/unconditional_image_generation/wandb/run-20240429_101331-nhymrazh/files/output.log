@@ -1,0 +1,214 @@
+04/29/2024 10:13:37 - INFO - __main__ - ***** Running training *****
+04/29/2024 10:13:37 - INFO - __main__ -   Num examples = 119915
+04/29/2024 10:13:37 - INFO - __main__ -   Num Epochs = 1000
+04/29/2024 10:13:37 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/29/2024 10:13:38 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/29/2024 10:13:38 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/29/2024 10:13:38 - INFO - __main__ -   Total optimization steps = 14990000
+04/29/2024 10:13:38 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/multiply_encLocal-lsun_church_train-2000-1000-random-blur-b_bar/generated_images
+Epoch 0:   0%|          | 0/14990 [00:00<?, ?it/s]
+Epoch 0:   0%|          | 0/14990 [00:00<?, ?it/s]/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:   2%|▏         | 275/14990 [06:39<6:14:08,  1.53s/it, loss=0.0854, lr=5.5e-5, step=275]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   2%|▏         | 276/14990 [07:21<55:50:37, 13.66s/it, loss=0.252, lr=5.52e-5, step=276]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+
+Epoch 0:   2%|▏         | 280/14990 [07:29<18:48:41,  4.60s/it, loss=0.178, lr=5.6e-5, step=280] /snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   2%|▏         | 281/14990 [07:39<25:36:49,  6.27s/it, loss=0.271, lr=5.62e-5, step=281]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   2%|▏         | 282/14990 [07:42<21:01:23,  5.15s/it, loss=0.122, lr=5.64e-5, step=282]/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.

@@ -1,0 +1,28 @@
+2024-05-22 08:55:28,768 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2024-05-22 08:55:28,768 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Configure stats pid to 3011267
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Loading settings from /home/srk1995/.config/wandb/settings
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Loading settings from /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/settings
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'examples/unconditional_image_generation/image_sample.py', 'program': '/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/image_sample.py'}
+2024-05-22 08:55:28,769 INFO    MainThread:3011267 [wandb_init.py:_log_setup():507] Logging user logs to /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240522_085528-xamhv3lw/logs/debug.log
+2024-05-22 08:55:28,770 INFO    MainThread:3011267 [wandb_init.py:_log_setup():508] Logging internal logs to /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240522_085528-xamhv3lw/logs/debug-internal.log
+2024-05-22 08:55:28,770 INFO    MainThread:3011267 [wandb_init.py:init():547] calling init triggers
+2024-05-22 08:55:28,770 INFO    MainThread:3011267 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2024-05-22 08:55:28,770 INFO    MainThread:3011267 [wandb_init.py:init():596] starting backend
+2024-05-22 08:55:28,770 INFO    MainThread:3011267 [wandb_init.py:init():600] setting up manager
+2024-05-22 08:55:28,774 INFO    MainThread:3011267 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-22 08:55:28,779 INFO    MainThread:3011267 [wandb_init.py:init():606] backend started and connected
+2024-05-22 08:55:28,782 INFO    MainThread:3011267 [wandb_init.py:init():703] updated telemetry
+2024-05-22 08:55:29,029 INFO    MainThread:3011267 [wandb_init.py:init():736] communicating run to backend with 60.0 second timeout
+2024-05-22 08:55:30,587 INFO    MainThread:3011267 [wandb_run.py:_on_init():2176] communicating current version
+2024-05-22 08:55:30,697 INFO    MainThread:3011267 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-22 08:55:30,697 INFO    MainThread:3011267 [wandb_init.py:init():787] starting run threads in backend
+2024-05-22 08:55:36,610 INFO    MainThread:3011267 [wandb_run.py:_console_start():2155] atexit reg
+2024-05-22 08:55:36,610 INFO    MainThread:3011267 [wandb_run.py:_redirect():2010] redirect: SettingsConsole.WRAP_RAW
+2024-05-22 08:55:36,611 INFO    MainThread:3011267 [wandb_run.py:_redirect():2075] Wrapping output streams.
+2024-05-22 08:55:36,611 INFO    MainThread:3011267 [wandb_run.py:_redirect():2100] Redirects installed.
+2024-05-22 08:55:36,612 INFO    MainThread:3011267 [wandb_init.py:init():828] run started, returning control to user process
+2024-05-22 08:55:36,613 INFO    MainThread:3011267 [wandb_run.py:_config_callback():1283] config_cb None None {'name': 'crop_Local-celeba-hq-2000-1000-0-b_bar'}

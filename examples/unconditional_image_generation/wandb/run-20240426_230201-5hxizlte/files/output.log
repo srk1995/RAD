@@ -1,0 +1,9 @@
+04/26/2024 23:02:07 - INFO - __main__ - ***** Running training *****
+04/26/2024 23:02:07 - INFO - __main__ -   Num examples = 119915
+04/26/2024 23:02:07 - INFO - __main__ -   Num Epochs = 500
+04/26/2024 23:02:07 - INFO - __main__ -   Instantaneous batch size per device = 16
+04/26/2024 23:02:08 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+04/26/2024 23:02:08 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/26/2024 23:02:08 - INFO - __main__ -   Total optimization steps = 3747500
+04/26/2024 23:02:08 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/geometric_mix_stepsLocal-lsun_church_train-2000-1000-random-blur-b_bar/generated_images
+Epoch 0:   0%|          | 0/7495 [00:00<?, ?it/s]

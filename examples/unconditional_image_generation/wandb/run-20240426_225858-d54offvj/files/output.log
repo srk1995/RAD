@@ -1,0 +1,40 @@
+04/26/2024 22:59:03 - INFO - __main__ - ***** Running training *****
+04/26/2024 22:59:03 - INFO - __main__ -   Num examples = 119915
+04/26/2024 22:59:04 - INFO - __main__ -   Num Epochs = 500
+04/26/2024 22:59:04 - INFO - __main__ -   Instantaneous batch size per device = 16
+04/26/2024 22:59:04 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+04/26/2024 22:59:04 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/26/2024 22:59:04 - INFO - __main__ -   Total optimization steps = 3747500
+04/26/2024 22:59:04 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/geometric_mix_stepsLocal-lsun_church_train-2000-1000-random-blur-b_bar/generated_images
+Checkpoint 'latest' does not exist. Starting a new training run.
+Epoch 0:   0%|          | 0/7495 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 1535, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 770, in <module>
+    main(args)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 593, in main
+    random_steps, m_steps, om_steps = set_random_steps(args)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/utils/set_random_steps.py", line 14, in set_random_steps
+    m = np.random.choice(args.ddpm_mask_num_steps, num_mix_step, replace=False)
+  File "mtrand.pyx", line 1011, in numpy.random.mtrand.RandomState.choice
+TypeError: expected a sequence of integers or a single integer, got '2.0'
+Traceback (most recent call last):
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 2236, in <module>
+    main()
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 2218, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 1528, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/pydevd.py", line 1535, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 770, in <module>
+    main(args)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 593, in main
+    random_steps, m_steps, om_steps = set_random_steps(args)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/utils/set_random_steps.py", line 14, in set_random_steps
+    m = np.random.choice(args.ddpm_mask_num_steps, num_mix_step, replace=False)
+  File "mtrand.pyx", line 1011, in numpy.random.mtrand.RandomState.choice

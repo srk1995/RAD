@@ -1,0 +1,10 @@
+04/30/2024 17:36:27 - INFO - __main__ - ***** Running training *****
+04/30/2024 17:36:28 - INFO - __main__ -   Num examples = 28000
+04/30/2024 17:36:28 - INFO - __main__ -   Num Epochs = 300
+04/30/2024 17:36:28 - INFO - __main__ -   Instantaneous batch size per device = 64
+04/30/2024 17:36:28 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+04/30/2024 17:36:28 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/30/2024 17:36:29 - INFO - __main__ -   Total optimization steps = 131400
+04/30/2024 17:36:29 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-128/Local-celeba-hq-2000-1000-0-b_bar/FID images
+Checkpoint 'latest' does not exist. Starting a new training run.
+

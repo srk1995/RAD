@@ -1,0 +1,49 @@
+06/11/2024 09:26:15 - INFO - __main__ - ***** Running training *****
+06/11/2024 09:26:15 - INFO - __main__ -   Num examples = 28000
+06/11/2024 09:26:15 - INFO - __main__ -   Num Epochs = 2500
+06/11/2024 09:26:15 - INFO - __main__ -   Instantaneous batch size per device = 16
+06/11/2024 09:26:15 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+06/11/2024 09:26:16 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/11/2024 09:26:16 - INFO - __main__ -   Total optimization steps = 4375000
+06/11/2024 09:26:16 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Global/generated_images
+06/11/2024 09:26:16 - INFO - accelerate.accelerator - Loading states from ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10
+Resuming from checkpoint checkpoint-10
+06/11/2024 09:26:17 - INFO - accelerate.checkpointing - All model weights loaded successfully
+06/11/2024 09:26:19 - INFO - accelerate.checkpointing - All optimizer states loaded successfully
+06/11/2024 09:26:19 - INFO - accelerate.checkpointing - All scheduler states loaded successfully
+06/11/2024 09:26:19 - INFO - accelerate.checkpointing - All dataloader sampler states loaded successfully
+06/11/2024 09:26:19 - INFO - accelerate.checkpointing - All random states loaded successfully
+06/11/2024 09:26:19 - INFO - accelerate.accelerator - Loading in 0 custom states
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]/snap/pycharm-professional/391/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+Epoch 0:   0%|          | 1/1750 [01:06<32:18:27, 66.50s/it]/snap/pycharm-professional/391/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+
+
+
+Epoch 0:   1%|          | 10/1750 [01:24<57:20,  1.98s/it] Traceback (most recent call last):
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/accelerate/accelerator.py", line 1040, in accumulate
+    yield
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_unconditional_test.py", line 597, in main
+    model_output = model(noisy_images, timesteps).sample
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/models/unets/unet_2d.py", line 313, in forward
+    sample, res_samples = downsample_block(hidden_states=sample, temb=emb)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/models/unets/unet_2d_blocks.py", line 1382, in forward
+    hidden_states = resnet(hidden_states, temb)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/srk1995/PycharmProjects/diffusers/src/diffusers/models/resnet.py", line 366, in forward
+    hidden_states = self.conv2(hidden_states)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB (GPU 0; 47.51 GiB total capacity; 4.34 GiB already allocated; 47.50 MiB free; 4.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

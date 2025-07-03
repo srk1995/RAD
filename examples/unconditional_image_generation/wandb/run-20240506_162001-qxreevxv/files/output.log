@@ -1,0 +1,10 @@
+05/06/2024 16:20:06 - INFO - __main__ - ***** Running training *****
+05/06/2024 16:20:06 - INFO - __main__ -   Num examples = 119915
+05/06/2024 16:20:07 - INFO - __main__ -   Num Epochs = 300
+05/06/2024 16:20:07 - INFO - __main__ -   Instantaneous batch size per device = 64
+05/06/2024 16:20:07 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+05/06/2024 16:20:07 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/06/2024 16:20:07 - INFO - __main__ -   Total optimization steps = 562200
+05/06/2024 16:20:07 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/Local-lsun_church_train-2000-1000-0-b_bar/Inpainting images
+05/06/2024 16:20:08 - INFO - accelerate.accelerator - Loading states from ddpm-model-tglcourse/lsun_church_train-128/Local-lsun_church_train-2000-1000-0-b_bar/checkpoint-270000
+Resuming from checkpoint checkpoint-270000

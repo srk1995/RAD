@@ -1,0 +1,28 @@
+06/11/2024 09:24:55 - INFO - __main__ - ***** Running training *****
+06/11/2024 09:24:55 - INFO - __main__ -   Num examples = 28000
+06/11/2024 09:24:56 - INFO - __main__ -   Num Epochs = 2500
+06/11/2024 09:24:56 - INFO - __main__ -   Instantaneous batch size per device = 16
+06/11/2024 09:24:56 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+06/11/2024 09:24:56 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/11/2024 09:24:56 - INFO - __main__ -   Total optimization steps = 4375000
+06/11/2024 09:24:56 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Global/generated_images
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+Epoch 0:   1%|          | 10/1750 [00:18<48:37,  1.68s/it, loss=0.76, lr=2e-5, step=9]/snap/pycharm-professional/391/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+06/11/2024 09:25:33 - INFO - accelerate.accelerator - Saving current state to ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10
+Configuration saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/unet/config.json
+Model weights saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/unet/diffusion_pytorch_model.safetensors
+06/11/2024 09:25:35 - INFO - accelerate.checkpointing - Optimizer state saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/optimizer.bin
+06/11/2024 09:25:36 - INFO - accelerate.checkpointing - Scheduler state saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/scheduler.bin
+06/11/2024 09:25:36 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/sampler.bin
+06/11/2024 09:25:36 - INFO - accelerate.checkpointing - Random states saved in ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10/random_states_0.pkl
+06/11/2024 09:25:37 - INFO - __main__ - Saved state to ddpm-model-mattymchen/celeba-hq-256/Global/checkpoint-10
+Epoch 0:   1%|          | 10/1750 [00:39<48:37,  1.68s/it, loss=0.719, lr=2e-5, step=10]/snap/pycharm-professional/391/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'UNet2DModel' object attribute is deprecated. Please access '__len__' over 'UNet2DModel's config object instead, e.g. 'unet.config.__len__'.

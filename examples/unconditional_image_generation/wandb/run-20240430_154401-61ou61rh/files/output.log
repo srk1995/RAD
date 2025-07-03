@@ -1,0 +1,112 @@
+04/30/2024 15:44:06 - INFO - __main__ - ***** Running training *****
+04/30/2024 15:44:06 - INFO - __main__ -   Num examples = 28000
+04/30/2024 15:44:07 - INFO - __main__ -   Num Epochs = 300
+04/30/2024 15:44:07 - INFO - __main__ -   Instantaneous batch size per device = 64
+04/30/2024 15:44:07 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+04/30/2024 15:44:07 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/30/2024 15:44:07 - INFO - __main__ -   Total optimization steps = 131400
+04/30/2024 15:44:07 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Local-celeba-hq-2000-1000-0/FID images
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+Checkpoint 'latest' does not exist. Starting a new training run.
+04/30/2024 15:46:11 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:11 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:12 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:13 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:46:13 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+04/30/2024 15:47:01 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:01 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:02 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:03 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:47:03 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:35 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:36 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:36 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:36 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:49:36 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+04/30/2024 15:50:54 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:54 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:54 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:54 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:54 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:55 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:55 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+04/30/2024 15:50:55 - WARNING - matplotlib.image - Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/home/srk1995/PycharmProjects/diffusers/src/diffusers/configuration_utils.py:140: FutureWarning: Accessing config attribute `__len__` directly via 'InPaintLocalDDPMPipeline' object attribute is deprecated. Please access '__len__' over 'InPaintLocalDDPMPipeline's config object instead, e.g. 'scheduler.config.__len__'.
+  deprecate("direct config name access", "1.0.0", deprecation_message, standard_warn=False)
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.
+  elif hasattr(v, '__len__') and not is_string(v):
+/snap/pycharm-professional/384/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_xml.py:346: FutureWarning: Accessing config attribute `__len__` directly via 'LocalUNet2DModel' object attribute is deprecated. Please access '__len__' over 'LocalUNet2DModel's config object instead, e.g. 'unet.config.__len__'.

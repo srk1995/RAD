@@ -1,0 +1,21 @@
+06/14/2024 10:42:24 - INFO - __main__ - ***** Running training *****
+06/14/2024 10:42:24 - INFO - __main__ -   Num examples = 28000
+06/14/2024 10:42:24 - INFO - __main__ -   Num Epochs = 2000
+06/14/2024 10:42:24 - INFO - __main__ -   Instantaneous batch size per device = 16
+06/14/2024 10:42:24 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+06/14/2024 10:42:25 - INFO - __main__ -   Gradient Accumulation steps = 1
+06/14/2024 10:42:25 - INFO - __main__ -   Total optimization steps = 3500000
+06/14/2024 10:42:25 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-256/Local-celeba-hq-2000-1000-0-b_bar-True/FID images_480000
+Traceback (most recent call last):
+  File "/snap/pycharm-professional/391/plugins/python/helpers/pydev/pydevd.py", line 1537, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/snap/pycharm-professional/391/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/image_sample.py", line 674, in <module>
+    main(args)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/image_sample.py", line 628, in main
+    accelerator.load_state(os.path.join(args.output_dir, path))
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/accelerate/accelerator.py", line 2907, in load_state
+    raise ValueError(f"Tried to find {input_dir} but folder does not exist")
+ValueError: Tried to find ddpm-model-mattymchen/celeba-hq-256/Local-celeba-hq-2000-1000-0-b_bar-True/checkpoint-480000 but folder does not exist
+Resuming from checkpoint checkpoint-480000

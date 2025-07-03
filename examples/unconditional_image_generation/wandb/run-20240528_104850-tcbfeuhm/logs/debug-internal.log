@@ -1,0 +1,143 @@
+2024-05-28 10:48:50,466 INFO    StreamThr :78528 [internal.py:wandb_internal():86] W&B internal server running at pid: 78528, started at: 2024-05-28 10:48:50.464648
+2024-05-28 10:48:50,472 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status
+2024-05-28 10:48:50,478 INFO    WriterThread:78528 [datastore.py:open_for_write():85] open: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/run-tcbfeuhm.wandb
+2024-05-28 10:48:50,487 DEBUG   SenderThread:78528 [sender.py:send():369] send: header
+2024-05-28 10:48:50,530 DEBUG   SenderThread:78528 [sender.py:send():369] send: run
+2024-05-28 10:48:51,143 INFO    SenderThread:78528 [dir_watcher.py:__init__():211] watching files in: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files
+2024-05-28 10:48:51,144 INFO    SenderThread:78528 [sender.py:_start_run_threads():1100] run started: tcbfeuhm with start time 1716860930.452898
+2024-05-28 10:48:51,151 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: summary_record
+2024-05-28 10:48:51,152 INFO    SenderThread:78528 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-05-28 10:48:51,167 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: check_version
+2024-05-28 10:48:51,168 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: check_version
+2024-05-28 10:48:51,306 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: run_start
+2024-05-28 10:48:51,324 DEBUG   HandlerThread:78528 [system_info.py:__init__():31] System info init
+2024-05-28 10:48:51,324 DEBUG   HandlerThread:78528 [system_info.py:__init__():46] System info init done
+2024-05-28 10:48:51,325 INFO    HandlerThread:78528 [system_monitor.py:start():181] Starting system monitor
+2024-05-28 10:48:51,326 INFO    SystemMonitor:78528 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-05-28 10:48:51,327 INFO    HandlerThread:78528 [system_monitor.py:probe():201] Collecting system info
+2024-05-28 10:48:51,330 INFO    SystemMonitor:78528 [interfaces.py:start():190] Started cpu monitoring
+2024-05-28 10:48:51,331 INFO    SystemMonitor:78528 [interfaces.py:start():190] Started disk monitoring
+2024-05-28 10:48:51,336 INFO    SystemMonitor:78528 [interfaces.py:start():190] Started gpu monitoring
+2024-05-28 10:48:51,341 INFO    SystemMonitor:78528 [interfaces.py:start():190] Started memory monitoring
+2024-05-28 10:48:51,345 INFO    SystemMonitor:78528 [interfaces.py:start():190] Started network monitoring
+2024-05-28 10:48:51,492 DEBUG   HandlerThread:78528 [system_info.py:probe():195] Probing system
+2024-05-28 10:48:51,517 DEBUG   HandlerThread:78528 [system_info.py:_probe_git():180] Probing git
+2024-05-28 10:48:51,562 DEBUG   HandlerThread:78528 [system_info.py:_probe_git():188] Probing git done
+2024-05-28 10:48:51,563 DEBUG   HandlerThread:78528 [system_info.py:probe():240] Probing system done
+2024-05-28 10:48:51,563 DEBUG   HandlerThread:78528 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-71-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2024-05-28T01:48:51.493321', 'startedAt': '2024-05-28T01:48:50.440648', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_unconditional_text.py', 'codePath': 'examples/unconditional_image_generation/train_unconditional_text.py', 'git': {'remote': 'http://raccoon.hanyang.ac.kr:30000/srk1995/diffusers.git', 'commit': '9df8f79c3b56817eb06ced6f5d98ccbfc6ccf202'}, 'email': 'Thffh133!@', 'root': '/home/srk1995/PycharmProjects/diffusers', 'host': 'panda', 'username': 'srk1995', 'executable': '/home/srk1995/anaconda3/envs/ADM/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2922.4645000000005, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3607.763, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3212.112, 'min': 1200.0, 'max': 3900.0}, {'current': 2106.503, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3534.756, 'min': 1200.0, 'max': 3900.0}, {'current': 3471.531, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1630.97, 'min': 1200.0, 'max': 3900.0}, {'current': 2984.301, 'min': 1200.0, 'max': 3900.0}, {'current': 2334.949, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1911.604, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3497.268, 'min': 1200.0, 'max': 3900.0}, {'current': 2879.524, 'min': 1200.0, 'max': 3900.0}, {'current': 2731.696, 'min': 1200.0, 'max': 3900.0}, {'current': 3548.742, 'min': 1200.0, 'max': 3900.0}, {'current': 2720.051, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3301.426, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1221.051, 'min': 1200.0, 'max': 3900.0}, {'current': 1591.852, 'min': 1200.0, 'max': 3900.0}, {'current': 3596.598, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3578.567, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2659.706, 'min': 1200.0, 'max': 3900.0}, {'current': 3503.176, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2322.233, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3502.968, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}], 'disk': {'total': 937.362720489502, 'used': 47.170127868652344}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 10, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}], 'memory': {'total': 125.5312385559082}}
+2024-05-28 10:48:51,564 INFO    HandlerThread:78528 [system_monitor.py:probe():211] Finished collecting system info
+2024-05-28 10:48:51,564 INFO    HandlerThread:78528 [system_monitor.py:probe():214] Publishing system info
+2024-05-28 10:48:51,564 DEBUG   HandlerThread:78528 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-05-28 10:48:51,572 DEBUG   HandlerThread:78528 [system_info.py:_save_pip():67] Saving pip packages done
+2024-05-28 10:48:51,573 DEBUG   HandlerThread:78528 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-05-28 10:48:52,158 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/wandb-summary.json
+2024-05-28 10:48:52,159 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/conda-environment.yaml
+2024-05-28 10:48:52,160 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/requirements.txt
+2024-05-28 10:48:56,148 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/conda-environment.yaml
+2024-05-28 10:48:56,240 DEBUG   HandlerThread:78528 [system_info.py:_save_conda():86] Saving conda packages done
+2024-05-28 10:48:56,284 INFO    HandlerThread:78528 [system_monitor.py:probe():216] Finished publishing system info
+2024-05-28 10:48:56,289 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:48:56,291 DEBUG   SenderThread:78528 [sender.py:send():369] send: files
+2024-05-28 10:48:56,292 INFO    SenderThread:78528 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-05-28 10:48:56,317 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:48:56,325 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:48:56,638 DEBUG   SenderThread:78528 [sender.py:send():369] send: telemetry
+2024-05-28 10:48:57,152 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:48:57,153 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/wandb-metadata.json
+2024-05-28 10:48:57,162 INFO    wandb-upload_0:78528 [upload_job.py:push():133] Uploaded file /tmp/tmpj60jn5z1wandb/lxynyp5m-wandb-metadata.json
+2024-05-28 10:48:59,154 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:00,156 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:01,157 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:01,286 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:03,159 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:06,838 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:07,163 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:11,311 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:49:11,313 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:49:12,566 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:17,173 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:49:17,894 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:22,900 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:23,180 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/config.yaml
+2024-05-28 10:49:26,312 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:49:26,314 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:49:28,630 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:33,632 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:38,633 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:41,311 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:49:41,313 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:49:44,542 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:49,544 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:51,349 DEBUG   SystemMonitor:78528 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-05-28 10:49:51,358 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:49:55,364 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:49:56,312 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:49:56,314 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:50:00,630 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:05,631 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:10,632 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:11,311 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:50:11,312 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:50:16,619 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:21,367 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:50:22,372 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:26,312 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:50:26,313 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:50:27,553 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:32,555 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:37,556 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:41,313 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:50:41,316 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:50:42,608 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:47,610 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:51,373 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:50:53,377 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:50:56,312 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:50:56,314 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:50:58,622 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:03,624 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:08,625 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:11,313 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:51:11,316 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:51:14,601 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:19,602 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:21,384 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:51:25,390 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:26,312 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:51:26,314 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:51:30,565 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:35,567 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:40,569 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:41,313 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:51:41,315 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:51:46,559 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:51,395 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:51:52,398 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:51:56,313 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:51:56,315 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:51:57,614 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:02,615 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:07,617 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:11,315 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:52:11,317 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:52:13,600 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:18,601 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:21,401 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:52:24,404 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:25,361 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:52:26,313 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:52:26,315 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:52:29,572 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:34,186 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: partial_history
+2024-05-28 10:52:34,913 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:35,370 INFO    Thread-16 :78528 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240528_104850-tcbfeuhm/files/output.log
+2024-05-28 10:52:39,915 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:41,315 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:52:41,317 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:52:45,636 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:50,637 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:52:51,443 DEBUG   SenderThread:78528 [sender.py:send():369] send: stats
+2024-05-28 10:52:56,315 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 10:52:56,318 DEBUG   SenderThread:78528 [sender.py:send_request():396] send_request: stop_status
+2024-05-28 10:52:56,598 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 10:53:01,598 DEBUG   HandlerThread:78528 [handler.py:handle_request():144] handle_request: status_report

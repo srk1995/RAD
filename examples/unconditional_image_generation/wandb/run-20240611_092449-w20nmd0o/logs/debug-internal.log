@@ -1,0 +1,250 @@
+2024-06-11 09:24:50,026 INFO    StreamThr :1067710 [internal.py:wandb_internal():86] W&B internal server running at pid: 1067710, started at: 2024-06-11 09:24:50.025044
+2024-06-11 09:24:50,031 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status
+2024-06-11 09:24:50,036 INFO    WriterThread:1067710 [datastore.py:open_for_write():85] open: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/run-w20nmd0o.wandb
+2024-06-11 09:24:50,048 DEBUG   SenderThread:1067710 [sender.py:send():369] send: header
+2024-06-11 09:24:50,079 DEBUG   SenderThread:1067710 [sender.py:send():369] send: run
+2024-06-11 09:24:50,741 INFO    SenderThread:1067710 [dir_watcher.py:__init__():211] watching files in: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files
+2024-06-11 09:24:50,741 INFO    SenderThread:1067710 [sender.py:_start_run_threads():1100] run started: w20nmd0o with start time 1718065490.01479
+2024-06-11 09:24:50,748 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:24:50,749 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:24:50,763 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: check_version
+2024-06-11 09:24:50,764 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: check_version
+2024-06-11 09:24:50,901 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: run_start
+2024-06-11 09:24:50,919 DEBUG   HandlerThread:1067710 [system_info.py:__init__():31] System info init
+2024-06-11 09:24:50,919 DEBUG   HandlerThread:1067710 [system_info.py:__init__():46] System info init done
+2024-06-11 09:24:50,919 INFO    HandlerThread:1067710 [system_monitor.py:start():181] Starting system monitor
+2024-06-11 09:24:50,920 INFO    SystemMonitor:1067710 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-06-11 09:24:50,921 INFO    HandlerThread:1067710 [system_monitor.py:probe():201] Collecting system info
+2024-06-11 09:24:50,923 INFO    SystemMonitor:1067710 [interfaces.py:start():190] Started cpu monitoring
+2024-06-11 09:24:50,925 INFO    SystemMonitor:1067710 [interfaces.py:start():190] Started disk monitoring
+2024-06-11 09:24:50,929 INFO    SystemMonitor:1067710 [interfaces.py:start():190] Started gpu monitoring
+2024-06-11 09:24:50,934 INFO    SystemMonitor:1067710 [interfaces.py:start():190] Started memory monitoring
+2024-06-11 09:24:50,939 INFO    SystemMonitor:1067710 [interfaces.py:start():190] Started network monitoring
+2024-06-11 09:24:51,071 DEBUG   HandlerThread:1067710 [system_info.py:probe():195] Probing system
+2024-06-11 09:24:51,084 DEBUG   HandlerThread:1067710 [system_info.py:_probe_git():180] Probing git
+2024-06-11 09:24:51,117 DEBUG   HandlerThread:1067710 [system_info.py:_probe_git():188] Probing git done
+2024-06-11 09:24:51,118 DEBUG   HandlerThread:1067710 [system_info.py:probe():240] Probing system done
+2024-06-11 09:24:51,118 DEBUG   HandlerThread:1067710 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-71-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2024-06-11T00:24:51.071888', 'startedAt': '2024-06-11T00:24:49.997416', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_unconditional.py', 'codePath': 'examples/unconditional_image_generation/train_unconditional.py', 'git': {'remote': 'http://raccoon.hanyang.ac.kr:30000/srk1995/diffusers.git', 'commit': '8de354c9539dcc2c6d3f8ae330a11a59534a7147'}, 'email': 'Thffh133!@', 'root': '/home/srk1995/PycharmProjects/diffusers', 'host': 'panda', 'username': 'srk1995', 'executable': '/home/srk1995/anaconda3/envs/ADM/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2944.834765625, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3615.979, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3615.842, 'min': 1200.0, 'max': 3900.0}, {'current': 3615.806, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3645.739, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3645.084, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1287.825, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2065.242, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3644.265, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3644.021, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3643.654, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}], 'disk': {'total': 937.362720489502, 'used': 47.16682052612305}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 10, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}], 'memory': {'total': 125.5312385559082}}
+2024-06-11 09:24:51,118 INFO    HandlerThread:1067710 [system_monitor.py:probe():211] Finished collecting system info
+2024-06-11 09:24:51,118 INFO    HandlerThread:1067710 [system_monitor.py:probe():214] Publishing system info
+2024-06-11 09:24:51,119 DEBUG   HandlerThread:1067710 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-06-11 09:24:51,124 DEBUG   HandlerThread:1067710 [system_info.py:_save_pip():67] Saving pip packages done
+2024-06-11 09:24:51,125 DEBUG   HandlerThread:1067710 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-06-11 09:24:51,756 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/conda-environment.yaml
+2024-06-11 09:24:51,757 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/requirements.txt
+2024-06-11 09:24:51,757 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:24:55,347 DEBUG   HandlerThread:1067710 [system_info.py:_save_conda():86] Saving conda packages done
+2024-06-11 09:24:55,393 INFO    HandlerThread:1067710 [system_monitor.py:probe():216] Finished publishing system info
+2024-06-11 09:24:55,399 DEBUG   SenderThread:1067710 [sender.py:send():369] send: files
+2024-06-11 09:24:55,399 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-06-11 09:24:55,401 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:24:55,429 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:24:55,431 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:24:55,745 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/conda-environment.yaml
+2024-06-11 09:24:55,747 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-metadata.json
+2024-06-11 09:24:55,844 DEBUG   SenderThread:1067710 [sender.py:send():369] send: telemetry
+2024-06-11 09:24:56,271 INFO    wandb-upload_0:1067710 [upload_job.py:push():133] Uploaded file /tmp/tmpmguxqkmgwandb/d3f2llgp-wandb-metadata.json
+2024-06-11 09:24:56,746 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:24:58,749 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:24:59,750 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:00,641 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:00,993 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:02,623 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:02,627 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:02,628 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:02,632 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:02,752 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:02,753 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:04,326 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:04,328 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:04,329 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:04,330 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:04,754 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:04,755 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:05,792 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:05,983 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:05,986 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:05,987 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:05,996 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:06,756 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:06,757 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:07,565 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:07,567 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:07,568 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:07,575 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:07,757 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:08,758 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:09,140 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:09,142 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:09,147 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:09,154 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:09,759 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:10,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:25:10,423 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:25:10,759 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:10,805 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:10,873 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:10,875 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:10,876 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:10,888 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:11,760 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:12,537 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:12,539 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:12,540 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:12,549 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:12,761 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:12,762 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:14,204 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:14,207 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:14,211 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:14,212 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:14,763 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:14,764 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:16,604 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:16,765 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:18,768 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:21,611 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:22,771 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/config.yaml
+2024-06-11 09:25:25,420 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:25:25,424 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:25:27,781 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:32,782 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:34,785 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:36,786 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:37,205 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: partial_history
+2024-06-11 09:25:37,207 DEBUG   SenderThread:1067710 [sender.py:send():369] send: history
+2024-06-11 09:25:37,208 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: summary_record
+2024-06-11 09:25:37,219 INFO    SenderThread:1067710 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-06-11 09:25:37,787 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/wandb-summary.json
+2024-06-11 09:25:38,377 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:38,789 INFO    Thread-16 :1067710 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240611_092449-w20nmd0o/files/output.log
+2024-06-11 09:25:40,420 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:25:40,422 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:25:43,762 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:48,764 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:50,941 DEBUG   SystemMonitor:1067710 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-06-11 09:25:50,953 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:25:53,959 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:25:55,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:25:55,424 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:25:59,756 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:04,757 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:09,758 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:10,420 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:26:10,422 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:26:15,714 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:20,715 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:20,959 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:26:25,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:26:25,422 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:26:25,731 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:30,733 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:35,734 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:40,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:26:40,422 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:26:40,734 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:45,736 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:50,737 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:26:50,970 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:26:55,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:26:55,422 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:26:56,714 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:01,717 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:06,717 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:10,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:27:10,423 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:27:11,769 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:16,771 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:20,981 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:27:21,986 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:25,421 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:27:25,423 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:27:27,751 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:32,753 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:37,755 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:40,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:27:40,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:27:43,723 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:48,725 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:50,987 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:27:53,991 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:27:55,422 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:27:55,424 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:27:59,676 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:04,677 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:09,679 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:10,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:28:10,425 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:28:14,693 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:19,694 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:21,023 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:28:25,028 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:25,422 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:28:25,424 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:28:30,692 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:35,693 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:40,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:28:40,425 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:28:40,768 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:45,769 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:50,770 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:28:51,008 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:28:55,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:28:55,425 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:28:56,672 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:01,673 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:06,674 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:10,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:29:10,424 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:29:11,696 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:16,698 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:21,018 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:29:22,023 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:25,423 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:29:25,425 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:29:27,759 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:32,761 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:37,762 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:40,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:29:40,425 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:29:42,769 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:47,771 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:51,028 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:29:53,031 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:29:55,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:29:55,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:29:58,685 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:03,687 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:08,689 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:10,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:30:10,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:30:13,706 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:18,708 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:21,034 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:30:24,038 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:25,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:30:25,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:30:29,772 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:34,774 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:39,775 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:40,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:30:40,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:30:45,724 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:50,725 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:30:51,044 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:30:55,424 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:30:55,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:30:56,695 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:01,696 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:06,697 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:10,425 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:31:10,426 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:31:11,756 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:16,757 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:21,050 DEBUG   SenderThread:1067710 [sender.py:send():369] send: stats
+2024-06-11 09:31:22,054 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:25,425 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: stop_status
+2024-06-11 09:31:25,428 DEBUG   SenderThread:1067710 [sender.py:send_request():396] send_request: stop_status
+2024-06-11 09:31:27,790 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:32,791 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report
+2024-06-11 09:31:37,792 DEBUG   HandlerThread:1067710 [handler.py:handle_request():144] handle_request: status_report

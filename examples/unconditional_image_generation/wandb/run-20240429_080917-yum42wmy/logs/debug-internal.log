@@ -1,0 +1,107 @@
+2024-04-29 08:09:17,323 INFO    StreamThr :2977099 [internal.py:wandb_internal():86] W&B internal server running at pid: 2977099, started at: 2024-04-29 08:09:17.322013
+2024-04-29 08:09:17,328 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status
+2024-04-29 08:09:17,333 INFO    WriterThread:2977099 [datastore.py:open_for_write():85] open: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/run-yum42wmy.wandb
+2024-04-29 08:09:17,342 DEBUG   SenderThread:2977099 [sender.py:send():369] send: header
+2024-04-29 08:09:17,391 DEBUG   SenderThread:2977099 [sender.py:send():369] send: run
+2024-04-29 08:09:17,998 INFO    SenderThread:2977099 [dir_watcher.py:__init__():211] watching files in: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files
+2024-04-29 08:09:17,999 INFO    SenderThread:2977099 [sender.py:_start_run_threads():1100] run started: yum42wmy with start time 1714345757.318421
+2024-04-29 08:09:18,007 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:09:18,008 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:09:18,036 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: check_version
+2024-04-29 08:09:18,037 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: check_version
+2024-04-29 08:09:18,171 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: run_start
+2024-04-29 08:09:18,199 DEBUG   HandlerThread:2977099 [system_info.py:__init__():31] System info init
+2024-04-29 08:09:18,199 DEBUG   HandlerThread:2977099 [system_info.py:__init__():46] System info init done
+2024-04-29 08:09:18,199 INFO    HandlerThread:2977099 [system_monitor.py:start():181] Starting system monitor
+2024-04-29 08:09:18,200 INFO    SystemMonitor:2977099 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-04-29 08:09:18,201 INFO    HandlerThread:2977099 [system_monitor.py:probe():201] Collecting system info
+2024-04-29 08:09:18,203 INFO    SystemMonitor:2977099 [interfaces.py:start():190] Started cpu monitoring
+2024-04-29 08:09:18,206 INFO    SystemMonitor:2977099 [interfaces.py:start():190] Started disk monitoring
+2024-04-29 08:09:18,210 INFO    SystemMonitor:2977099 [interfaces.py:start():190] Started gpu monitoring
+2024-04-29 08:09:18,217 INFO    SystemMonitor:2977099 [interfaces.py:start():190] Started memory monitoring
+2024-04-29 08:09:18,220 INFO    SystemMonitor:2977099 [interfaces.py:start():190] Started network monitoring
+2024-04-29 08:09:18,322 DEBUG   HandlerThread:2977099 [system_info.py:probe():195] Probing system
+2024-04-29 08:09:18,335 DEBUG   HandlerThread:2977099 [system_info.py:_probe_git():180] Probing git
+2024-04-29 08:09:18,372 DEBUG   HandlerThread:2977099 [system_info.py:_probe_git():188] Probing git done
+2024-04-29 08:09:18,372 DEBUG   HandlerThread:2977099 [system_info.py:probe():240] Probing system done
+2024-04-29 08:09:18,373 DEBUG   HandlerThread:2977099 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-71-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2024-04-28T23:09:18.322436', 'startedAt': '2024-04-28T23:09:17.300654', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py', 'codePath': 'examples/unconditional_image_generation/train_local_unconditional.py', 'git': {'remote': 'http://raccoon.hanyang.ac.kr:30000/srk1995/diffusers.git', 'commit': 'c8d7ec9a2500d97a26857501e93c77164779bdfc'}, 'email': 'Thffh133!@', 'root': '/home/srk1995/PycharmProjects/diffusers', 'host': 'panda', 'username': 'srk1995', 'executable': '/home/srk1995/anaconda3/envs/ADM/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2968.9718125000004, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1936.44, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3599.999, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 1403.275, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3643.789, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3643.465, 'min': 1200.0, 'max': 3900.0}, {'current': 3643.266, 'min': 1200.0, 'max': 3900.0}, {'current': 3643.196, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2900.0, 'min': 1200.0, 'max': 3900.0}], 'disk': {'total': 937.362720489502, 'used': 47.17008972167969}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 10, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25769803776}], 'memory': {'total': 125.5312385559082}}
+2024-04-29 08:09:18,373 INFO    HandlerThread:2977099 [system_monitor.py:probe():211] Finished collecting system info
+2024-04-29 08:09:18,373 INFO    HandlerThread:2977099 [system_monitor.py:probe():214] Publishing system info
+2024-04-29 08:09:18,374 DEBUG   HandlerThread:2977099 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-04-29 08:09:18,381 DEBUG   HandlerThread:2977099 [system_info.py:_save_pip():67] Saving pip packages done
+2024-04-29 08:09:18,381 DEBUG   HandlerThread:2977099 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-04-29 08:09:19,013 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/requirements.txt
+2024-04-29 08:09:19,014 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/conda-environment.yaml
+2024-04-29 08:09:19,014 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:09:22,801 DEBUG   HandlerThread:2977099 [system_info.py:_save_conda():86] Saving conda packages done
+2024-04-29 08:09:22,845 INFO    HandlerThread:2977099 [system_monitor.py:probe():216] Finished publishing system info
+2024-04-29 08:09:22,850 DEBUG   SenderThread:2977099 [sender.py:send():369] send: files
+2024-04-29 08:09:22,851 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-04-29 08:09:22,853 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:22,872 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:09:22,886 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:09:23,003 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/conda-environment.yaml
+2024-04-29 08:09:23,004 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-metadata.json
+2024-04-29 08:09:23,242 DEBUG   SenderThread:2977099 [sender.py:send():369] send: telemetry
+2024-04-29 08:09:23,687 INFO    wandb-upload_0:2977099 [upload_job.py:push():133] Uploaded file /tmp/tmpw_55kendwandb/vpv1jyxr-wandb-metadata.json
+2024-04-29 08:09:24,004 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_created():272] file/dir created: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:09:26,006 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:09:27,007 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:09:28,733 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:33,734 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:37,870 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:09:37,871 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:09:39,190 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:44,192 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:49,198 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:09:50,028 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/config.yaml
+2024-04-29 08:09:52,871 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:09:52,874 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:09:55,119 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:00,121 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:05,122 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:07,871 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:10:07,875 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:10:11,117 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:16,119 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:18,220 DEBUG   SystemMonitor:2977099 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-04-29 08:10:18,229 DEBUG   SenderThread:2977099 [sender.py:send():369] send: stats
+2024-04-29 08:10:21,234 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:21,880 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:22,871 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:10:22,873 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:10:24,061 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:10:27,196 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:28,899 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:28,903 DEBUG   SenderThread:2977099 [sender.py:send():369] send: history
+2024-04-29 08:10:28,904 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:10:28,925 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:10:29,066 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:10:30,067 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:10:30,420 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:30,423 DEBUG   SenderThread:2977099 [sender.py:send():369] send: history
+2024-04-29 08:10:30,424 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:10:30,435 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:10:31,068 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:10:31,955 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:31,958 DEBUG   SenderThread:2977099 [sender.py:send():369] send: history
+2024-04-29 08:10:31,959 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:10:31,964 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:10:32,069 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:10:32,069 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:10:32,958 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report
+2024-04-29 08:10:33,338 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:33,340 DEBUG   SenderThread:2977099 [sender.py:send():369] send: history
+2024-04-29 08:10:33,341 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:10:33,342 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:10:34,071 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:10:34,072 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:10:34,656 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: partial_history
+2024-04-29 08:10:34,659 DEBUG   SenderThread:2977099 [sender.py:send():369] send: history
+2024-04-29 08:10:34,659 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: summary_record
+2024-04-29 08:10:34,660 INFO    SenderThread:2977099 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-04-29 08:10:35,072 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/wandb-summary.json
+2024-04-29 08:10:36,073 INFO    Thread-16 :2977099 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/wandb/run-20240429_080917-yum42wmy/files/output.log
+2024-04-29 08:10:37,871 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: stop_status
+2024-04-29 08:10:37,873 DEBUG   SenderThread:2977099 [sender.py:send_request():396] send_request: stop_status
+2024-04-29 08:10:38,113 DEBUG   HandlerThread:2977099 [handler.py:handle_request():144] handle_request: status_report

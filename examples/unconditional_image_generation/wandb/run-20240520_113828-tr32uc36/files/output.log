@@ -1,0 +1,42 @@
+05/20/2024 11:38:34 - INFO - __main__ - ***** Running training *****
+05/20/2024 11:38:34 - INFO - __main__ -   Num examples = 28000
+05/20/2024 11:38:34 - INFO - __main__ -   Num Epochs = 1000
+05/20/2024 11:38:34 - INFO - __main__ -   Instantaneous batch size per device = 16
+05/20/2024 11:38:34 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+05/20/2024 11:38:34 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/20/2024 11:38:35 - INFO - __main__ -   Total optimization steps = 1750000
+05/20/2024 11:38:35 - INFO - __main__ -   Image path = ddpm-model-mattymchen/celeba-hq-64/cropLocal-celeba-hq-2000-1000-random-blur-b_bar/generated_images
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]
+Epoch 0:   0%|          | 0/1750 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/accelerate/data_loader.py", line 452, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2814, in __getitems__
+    batch = self.__getitem__(keys)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2810, in __getitem__
+    return self._getitem(key)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2795, in _getitem
+    formatted_output = format_table(
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/formatting/formatting.py", line 629, in format_table
+    return formatter(pa_table, query_type=query_type)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/formatting/formatting.py", line 400, in __call__
+    return self.format_batch(pa_table)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/datasets/formatting/formatting.py", line 515, in format_batch
+    return self.transform(batch)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 543, in transform_images
+    images = [augmentations(image.convert("RGB")) for image in examples["image"]]
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/train_local_unconditional.py", line 543, in <listcomp>
+    images = [augmentations(image.convert("RGB")) for image in examples["image"]]
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/opencv_transforms/transforms.py", line 64, in __call__
+    img = t(img)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/opencv_transforms/transforms.py", line 193, in __call__
+    return F.center_crop(img, self.size)
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/opencv_transforms/functional.py", line 222, in center_crop
+    h, w = img.shape[0:2]
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/PIL/Image.py", line 528, in __getattr__
+    raise AttributeError(name)

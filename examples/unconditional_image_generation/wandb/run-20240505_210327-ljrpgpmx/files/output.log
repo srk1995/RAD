@@ -1,0 +1,31 @@
+05/05/2024 21:03:33 - INFO - __main__ - ***** Running training *****
+05/05/2024 21:03:33 - INFO - __main__ -   Num examples = 119915
+05/05/2024 21:03:33 - INFO - __main__ -   Num Epochs = 300
+05/05/2024 21:03:34 - INFO - __main__ -   Instantaneous batch size per device = 64
+05/05/2024 21:03:34 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+05/05/2024 21:03:34 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/05/2024 21:03:34 - INFO - __main__ -   Total optimization steps = 562200
+05/05/2024 21:03:34 - INFO - __main__ -   Image path = ddpm-model-tglcourse/lsun_church_train-128/Local-lsun_church_train-2000-1000-0-b_bar/Inpainting images
+Resuming from checkpoint checkpoint-270000
+05/05/2024 21:03:35 - INFO - accelerate.accelerator - Loading states from ddpm-model-tglcourse/lsun_church_train-128/Local-lsun_church_train-2000-1000-0-b_bar/checkpoint-270000
+05/05/2024 21:03:37 - INFO - accelerate.checkpointing - All model weights loaded successfully
+05/05/2024 21:03:41 - INFO - accelerate.checkpointing - All optimizer states loaded successfully
+05/05/2024 21:03:41 - INFO - accelerate.checkpointing - All scheduler states loaded successfully
+05/05/2024 21:03:42 - INFO - accelerate.checkpointing - All dataloader sampler states loaded successfully
+05/05/2024 21:03:42 - INFO - accelerate.checkpointing - All random states loaded successfully
+05/05/2024 21:03:42 - INFO - accelerate.accelerator - Loading in 0 custom states
+Traceback (most recent call last):
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/inpaint.py", line 659, in <module>
+    main(args)
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/inpaint.py", line 624, in main
+    for iter, (img, mask) in enumerate(eval_loader):
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/srk1995/anaconda3/envs/ADM/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/srk1995/PycharmProjects/diffusers/examples/unconditional_image_generation/inpaint.py", line 540, in __getitem__
+    self.mask[:, 0::2] = 1
