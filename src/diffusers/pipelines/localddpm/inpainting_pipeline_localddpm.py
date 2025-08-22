@@ -1,16 +1,17 @@
-# Copyright 2024 The HuggingFace Team. All rights reserved.
+# Copyright (C) 2024 Sora Kim
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 from typing import List, Optional, Tuple, Union
@@ -155,38 +156,30 @@ class InPaintLocalDDPMPipeline(DiffusionPipeline,
             t = t.repeat(len(self.mask)).to(self.mask.device)
             self.scheduler.set_variables(self.mask, t)
             self.scheduler.mask_idx = self.scheduler.b_t.nonzero(as_tuple=True)
-            if not args.time_enc:
-                if args.use_b_bar:
-                    timesteps = self.scheduler.b_t_bar
-                    if 'mult' in args.exp_name:
-                        timesteps *= args.ddpm_num_steps
-                else:
-                    B, _, H, W = self.scheduler.b_t_bar.shape
-                    beta_bar = 1 - self.scheduler.alphas_cumprod
-                    beta_bar = torch.hstack((torch.tensor([0.0]), beta_bar[:self.scheduler.mask_steps])).to(
-                        mask.device)
-                    dist = torch.abs(self.scheduler.b_t_bar.view(-1, 1) - beta_bar[None, :])
-                    idx_low = torch.argmin(dist, axis=1)
+            B, _, H, W = self.scheduler.b_t_bar.shape
+            beta_bar = 1 - self.scheduler.alphas_cumprod
+            beta_bar = torch.hstack((torch.tensor([0.0]), beta_bar[:self.scheduler.mask_steps])).to(
+                mask.device)
+            dist = torch.abs(self.scheduler.b_t_bar.view(-1, 1) - beta_bar[None, :])
+            idx_low = torch.argmin(dist, axis=1)
 
-                    idx_high = torch.where(idx_low == 0, 1, idx_low)
-                    idx_low = torch.where(idx_low == len(beta_bar) - 1, idx_low - 1, idx_low)
+            idx_high = torch.where(idx_low == 0, 1, idx_low)
+            idx_low = torch.where(idx_low == len(beta_bar) - 1, idx_low - 1, idx_low)
 
-                    idx_high = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
-                            beta_bar[idx_low] > self.scheduler.b_t_bar.view(-1)), idx_low, idx_high)
-                    idx_low = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
-                            beta_bar[idx_low] > self.scheduler.b_t_bar.view(-1)), idx_high - 1, idx_low)
+            idx_high = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
+                    beta_bar[idx_low] > self.scheduler.b_t_bar.view(-1)), idx_low, idx_high)
+            idx_low = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
+                    beta_bar[idx_low] > self.scheduler.b_t_bar.view(-1)), idx_high - 1, idx_low)
 
-                    idx_high = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
-                            beta_bar[idx_low] < self.scheduler.b_t_bar.view(-1)), idx_low + 1, idx_high)
-                    low_val = torch.take(beta_bar, idx_low)
-                    high_val = torch.take(beta_bar, idx_high)
+            idx_high = torch.where((idx_low > 0) & (idx_low < len(beta_bar) - 1) & (
+                    beta_bar[idx_low] < self.scheduler.b_t_bar.view(-1)), idx_low + 1, idx_high)
+            low_val = torch.take(beta_bar, idx_low)
+            high_val = torch.take(beta_bar, idx_high)
 
-                    interpolation_factor = (self.scheduler.b_t_bar.view(-1) - low_val) / (high_val - low_val)
-                    interpolation_factor[high_val == low_val] = 0
-                    timesteps = idx_low + interpolation_factor
-                    timesteps = timesteps.view(B, -1, H, W)
-            else:
-                timesteps = t
+            interpolation_factor = (self.scheduler.b_t_bar.view(-1) - low_val) / (high_val - low_val)
+            interpolation_factor[high_val == low_val] = 0
+            timesteps = idx_low + interpolation_factor
+            timesteps = timesteps.view(B, -1, H, W)
             model_output = self.unet(image, timesteps).sample
 
             # 2. compute previous image: x_t -> x_t-1

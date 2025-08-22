@@ -1,0 +1,7 @@
+accelerate>=0.16.0
+torchvision
+datasets
+transformers
+peft
+opencv_transforms
+opencv-python

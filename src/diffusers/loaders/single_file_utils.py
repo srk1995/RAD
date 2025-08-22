@@ -27,13 +27,6 @@ import yaml
 from ..models.modeling_utils import load_state_dict
 from ..schedulers import (
     DDIMScheduler,
-    DPMSolverMultistepScheduler,
-    EDMDPMSolverMultistepScheduler,
-    EulerAncestralDiscreteScheduler,
-    EulerDiscreteScheduler,
-    HeunDiscreteScheduler,
-    LMSDiscreteScheduler,
-    PNDMScheduler,
 )
 from ..utils import (
     SAFETENSORS_WEIGHTS_NAME,

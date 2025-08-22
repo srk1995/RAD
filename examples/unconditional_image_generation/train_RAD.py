@@ -1,19 +1,18 @@
-#!/usr/bin/env python
-# coding=utf-8
-# Copyright 2024 The HuggingFace Inc. team. All rights reserved.
+# Copyright (C) 2024 Sora Kim
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-"""Fine-tuning script for Stable Diffusion for text2image with support for LoRA."""
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""Fine-tuning script for RAD with support for LoRA."""
 
 import warnings
 
@@ -52,7 +51,6 @@ import diffusers
 from diffusers import UNet2DModel
 from diffusers.models.unets.unet_2d_local import LocalUNet2DModel
 from diffusers.schedulers.scheduling_localddpm import LocalDDPMScheduler
-from diffusers.pipelines.localddpm.pipeline_localddpm import LocalDDPMPipeline
 from diffusers.pipelines.localddpm.inpainting_pipeline_localddpm import InPaintLocalDDPMPipeline
 from diffusers.optimization import get_scheduler
 from diffusers.training_utils import cast_training_params, compute_snr
@@ -61,7 +59,7 @@ from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_
 from diffusers.utils.import_utils import is_xformers_available
 from diffusers.utils.torch_utils import is_compiled_module
 
-from diffusers.utils.noise_gen import gen_mask_parallel, generate_perlin_noise_2d
+from diffusers.utils.noise_gen import generate_perlin_noise_2d
 from diffusers.utils.set_random_steps import set_random_steps
 
 from torch.utils.data import Subset, DataLoader
@@ -120,7 +118,7 @@ def parse_args():
     parser.add_argument(
         "--pretrained_model_name_or_path",
         type=str,
-        default="xutongda/adm_ffhq_256x256",  # xutongda/adm_lsun_bedroom_256x256, xutongda/adm_imagenet_256x256_unconditional, xutongda/adm_ffhq_256x256
+        default="xutongda/adm_ffhq_256x256",
         # required=True,
         help="Path to pretrained model or model identifier from huggingface.co/models.",
     )
@@ -236,7 +234,7 @@ def parse_args():
         help="whether to randomly flip images horizontally",
     )
     parser.add_argument(
-        "--train_batch_size", type=int, default=2, help="Batch size (per device) for the training dataloader."
+        "--train_batch_size", type=int, default=8, help="Batch size (per device) for the training dataloader."
     )
     parser.add_argument("--num_train_epochs", type=int, default=500)
     parser.add_argument(
@@ -404,18 +402,11 @@ def parse_args():
     )
 
     parser.add_argument(
-        "--random_steps", action="store_true", default=False
+        "--random_steps", action="store_true"
     )
 
     parser.add_argument(
-        "--time_enc", action="store_true"
-    )
-    parser.add_argument(
-        "--train_mask", type=str, default=None,
-    )
-    parser.add_argument(
         "--use_ema",
-        default=True,
         action="store_true",
         help="Whether to use Exponential Moving Average for the final model weights.",
     )
@@ -454,7 +445,7 @@ def main():
     accelerator = Accelerator(
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         mixed_precision=args.mixed_precision,
-        log_with=args.report_to,
+        log_with=None,
         project_config=accelerator_project_config,
     )
 
@@ -534,16 +525,13 @@ def main():
                 repo_id=args.hub_model_id or Path(args.output_dir).name, exist_ok=True, token=args.hub_token
             ).repo_id
     # Load scheduler, tokenizer and modaels.
-    # noise_scheduler = LocalDDPMScheduler.from_pretrained(args.pretrained_model_name_or_path)
+
     noise_scheduler = LocalDDPMScheduler(num_train_timesteps=args.ddpm_num_steps,
                                          num_mask_timesteps=args.ddpm_mask_num_steps,
                                          variance_type="learned_range"
                                          )
 
-    if args.time_enc:
-        mod = UNet2DModel
-    else:
-        mod = LocalUNet2DModel
+    mod = LocalUNet2DModel
     model = mod.from_pretrained(
         args.pretrained_model_name_or_path, revision=args.revision, variant=args.variant, low_cpu_mem_usage=False,
     )
@@ -729,7 +717,7 @@ def main():
             split="train",
         )
 
-        tran_val_dataset = dataset.train_test_split(test_size=1000, seed=42)
+        tran_val_dataset = dataset.train_test_split(test_size=2000, seed=42)
         dataset = tran_val_dataset["train"]
         val_dataset = tran_val_dataset["test"]
 
@@ -779,17 +767,9 @@ def main():
 
     dataset.set_transform(transform_images)
     val_dataset.set_transform(transform_images)
-    if args.train_mask is not None:
-        f = args.train_mask
-        eval_dataset = InpaintDataset(dataset, f, transform=transforms.ToTensor())
-        train_dataloader = torch.utils.data.DataLoader(
-            eval_dataset, batch_size=args.train_batch_size, shuffle=True, num_workers=args.dataloader_num_workers,
-            drop_last=True
-        )
-    else:
-        train_dataloader = torch.utils.data.DataLoader(
-            dataset, batch_size=args.train_batch_size, shuffle=True, num_workers=args.dataloader_num_workers
-        )
+    train_dataloader = torch.utils.data.DataLoader(
+        dataset, batch_size=args.train_batch_size, shuffle=True, num_workers=args.dataloader_num_workers
+    )
 
     # Scheduler and math around the number of training steps.
     overrode_max_train_steps = False
@@ -876,13 +856,9 @@ def main():
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
             # Convert images to latent space
-            if args.train_mask is not None:
-                latents = batch[0]
-                mask = batch[1]
-            else:
-                latents = batch["input"].to(dtype=weight_dtype)
-                mask = generate_perlin_noise_2d((latents.shape[0], args.resolution, args.resolution), rand=True,
-                                                sig=args.blur_sigma).to(latents.device)
+            latents = batch["input"].to(dtype=weight_dtype)
+            mask = generate_perlin_noise_2d((latents.shape[0], args.resolution, args.resolution), rand=True,
+                                            sig=args.blur_sigma).to(latents.device)
 
             # Sample noise that we'll add to the latents
             noise = torch.randn_like(latents)
@@ -913,6 +889,7 @@ def main():
 
             # Predict the noise residual
             with (accelerator.accumulate(model)):
+                # Inverse T map
                 B, _, H, W = noise_scheduler.b_t_bar.shape
                 beta_bar = 1 - noise_scheduler.alphas_cumprod
                 beta_bar = torch.hstack((torch.tensor([0.0]), beta_bar[:noise_scheduler.mask_steps])).to(
@@ -1056,20 +1033,7 @@ def main():
 
     # Save the lora layers
     accelerator.wait_for_everyone()
-    if accelerator.is_main_process:
-        model = model.to(torch.float32)
 
-        unwrapped_unet = unwrap_model(model)
-        unet_lora_state_dict = convert_state_dict_to_diffusers(get_peft_model_state_dict(unwrapped_unet))
-        LocalDDPMPipeline.save_lora_weights(
-            save_directory=args.output_dir,
-            unet_lora_layers=unet_lora_state_dict,
-            safe_serialization=True,
-        )
-
-
-        # Final inference
-        # Load previous pipeline
 
     accelerator.end_training()
 

@@ -6,10 +6,10 @@ from ...utils import (
 )
 
 
-_import_structure = {"pipeline_localddpm": ["LocalDDPMPipeline"]}
+_import_structure = {"inpainting_pipeline_localddpm": ["InPaintLocalDDPMPipeline"]}
 
 if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
-    from .pipeline_localddpm import LocalDDPMPipeline
+    from .inpainting_pipeline_localddpm import InPaintLocalDDPMPipeline
 
 else:
     import sys

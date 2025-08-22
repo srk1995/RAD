@@ -40,17 +40,9 @@ class MyDataset(Dataset):
 
 if __name__ == "__main__":
     loss_fn = lpips.LPIPS(pretrained=True, net='alex')
-    # im0_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-imagenet-1k-256/Local-imagenet-1k-1000-1000-0-b_bar-perlin/Inpainting images_FID_1400000/DDPM/thick/inpainted/'
-    # im1_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-imagenet-1k-256/Local-imagenet-1k-1000-1000-0-b_bar-perlin/Inpainting images_FID_1400000/DDPM/thick/original/'
-    # im0_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-imagenet-1k-256/Local-i/magenet-1k-2000-1000-0-perlin_lora_rank_16/Inpainting images_FID_comp/800000/DDPM/extreme/inpainted/'
-    im0_path = "/home/srk1995/PycharmProjects/diffusers/ddpm-model-mattymchen/celeba-hq-256/box_Local-celeba-hq-2000-1000-0-perlin_lora_rank_16/Inpainting images_FID_300000/DDPM/genhalf/inpainted/"
-    im1_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-mattymchen/celeba-hq-256/box_Local-celeba-hq-2000-1000-0-perlin_lora_rank_16/Inpainting images_FID_300000/DDPM/genhalf/original/'
-    # im0_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-pcuenq/lsun-bedrooms-256/Local-lsun-bedrooms-2000-1000-0-b_bar-perlin/Inpainting images_FID_950000/DDPM/thick/inpainted/'
-    # im1_path = '/home/srk1995/PycharmProjects/diffusers/ddpm-model-pcuenq/lsun-bedrooms-256/Local-lsun-bedrooms-2000-1000-0-b_bar-perlin/Inpainting images_FID_950000/DDPM/thick/original/'
-    # im0_path = '/home/srk1995/PycharmProjects/MCG_diffusion-main/results_bedroom2_repaint/box/lsun_bedroom/inpainted/'
-    # im1_path = '/home/srk1995/PycharmProjects/MCG_diffusion-main/results_bedroom2_repaint/box/lsun_bedroom/original/'
-    # im0_path = '/home/srk1995/PycharmProjects/ddrm-master/exp/image_samples/bedroom/box/images/'
-    # im1_path = '/home/srk1995/PycharmProjects/ddrm-master/exp/image_samples/bedroom/box/original/'
+    im0_path = "Inpainted image path"
+    im1_path = "Original image path"
+
     mask_list = glob(f"{im0_path}/../mask/*")
     mask_list = [x.split('/')[-2] for x in mask_list]
     mask_list = set(mask_list)
