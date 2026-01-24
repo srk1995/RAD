@@ -55,6 +55,9 @@ python examples/unconditional_image_generation/inpaint.py --val_data_path [your 
 python examples/unconditional_image_generation/inpaint.py --val_data_path [your validation image path] --dataset_name imagenet-1k --pretrained_model_name_or_path xutongda/adm_imagenet_256x256_unconditional --resume_from_checkpoint [your checkpoint]
 ```
 
+## Checkpoint
+
+### [Google Drive](https://drive.google.com/drive/folders/1Phtn4UpeGPLLokYiWqkNcs8AHl052ld9?usp=sharing)
 
 ## Reference
 
